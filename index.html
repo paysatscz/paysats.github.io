@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Víte, že ...</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" type="image/png" href="images/bitcoin-black.png"/>
+  <script src="js/qrcode.min.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+ </head>
+ <body>
+  <div style="text-align:center; margin: 0 auto; width:99%">
+     <h2>Platební brána LN</h2>
+     <p>Lightning, On-chain</p>
+
+     <label for="date">Zadej počet Kč:</label><br>
+     <input type="number" id="satspaynumberczk" min="1"><br><br>
+
+     <button id="genSatsPayButton" onclick="CallSatsPay()">Zaplatit</button>
+
+     <div id="lnqrlabel" style="display:none">Platba po Lightning Network</div>
+     <div id="lnqrcontent"></div>
+     
+     <div id="btcqrlabel" style="display:none">Platba Bitcoinem</div>
+     <div id="btcqrcontent"></div>
+     </div>
+    <footer id="footer"></footer>
+  </div>
+ </body>
+</html>
