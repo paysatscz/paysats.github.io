@@ -1,1 +1,0 @@
-# paysats.github.io
